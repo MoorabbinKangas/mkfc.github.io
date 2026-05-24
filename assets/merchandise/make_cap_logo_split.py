@@ -1,19 +1,29 @@
 """
-Cap logo in the New Era 'split script' style:
-  small "MOORABBIN" above a large "KANGAROOS" where each letter has a white
-  outline, the top half of the letter interior matches the cap colour (so it
-  reads outline-only on top), and the bottom half is solid white.
+MKFC wordmark in the New Era 'split script' style:
+  small "MOORABBIN" above a large "KANGAS" where each letter has a white
+  outline, the top half of the letter interior is empty (cap colour shows
+  through), and the bottom half is filled with a vertical gradient from
+  white at the split line to light blue at the baseline.
 
-Generates two variants:
-  mkfc-cap-logo-split.png         - upright KANGAROOS
-  mkfc-cap-logo-split-italic.png  - KANGAROOS sheared right (~12° lean)
+Generates three variants:
+  mkfc-wordmark-kangas.png                    - upright KANGAS
+  mkfc-wordmark-kangas-italic.png             - KANGAS sheared right (~12.4°)
+  mkfc-wordmark-kangas-italic-transparent.png - same on transparent background
+
+Background colour is the canonical MKFC royal blue (#013087, Pantone 286 C).
+
+Linux/WSL: the FONT paths below assume Open Sans is installed via
+`sudo apt install fonts-open-sans`. On Windows, point FONT_MAIN/FONT_TOP at
+a local copy of OpenSans-CondBold.ttf / OpenSans-Bold.ttf (or any bold
+condensed sans you prefer).
 """
 from PIL import Image, ImageDraw, ImageFont
 from scipy.ndimage import binary_erosion
 import numpy as np
 
-NAVY = (1, 40, 94)
+ROYAL = (1, 48, 135)       # #013087 — Pantone 286 C
 WHITE = (255, 255, 255)
+LIGHT_BLUE = (200, 214, 240)  # #C8D6F0 — secondary palette
 
 FONT_MAIN = "/usr/share/fonts/truetype/open-sans/OpenSans-CondBold.ttf"
 FONT_TOP = "/usr/share/fonts/truetype/open-sans/OpenSans-Bold.ttf"
@@ -35,11 +45,16 @@ def fit(text, max_w, max_h, path):
     return best
 
 
-def build_main_layer(font, text, bbox, y_baseline_offset, target_h, shear=0.0):
+def build_main_layer(font, text, bbox, y_text_top, target_h, shear=0.0):
     """Render text with the split-script effect on a transparent layer.
-    Returns (layer, outline_px). The text is rendered at the LEFT edge of the
-    layer (x=0); the caller centres the layer on the canvas.
-    Layer width = text_w + shear*text_h so the slanted top still fits.
+
+    Returns (layer, outline_px). The text is rendered at the LEFT edge of
+    the layer (x=0); the caller centres the layer on the canvas. Layer
+    width = text_w + shear*text_h so the slanted top still fits.
+
+    The upper half of each glyph interior is made transparent (cap colour
+    shows through), and the lower half is filled with a vertical gradient
+    from WHITE at the split line to LIGHT_BLUE at the bottom of the text.
     """
     text_w = bbox[2] - bbox[0]
     text_h = bbox[3] - bbox[1]
@@ -47,10 +62,11 @@ def build_main_layer(font, text, bbox, y_baseline_offset, target_h, shear=0.0):
     buf_w = text_w + extra_w + 4  # tiny safety margin
 
     layer = Image.new("RGBA", (buf_w, target_h), (0, 0, 0, 0))
-    # Render so the bottom-left of glyphs sits at x = 0 (after shifting away
-    # the font's own left side bearing), and the BASELINE is at y_baseline.
+    # Render so the bottom-left of glyphs sits at x = 0 (after shifting
+    # away the font's own left side bearing), and the TOP of glyphs is
+    # at y = y_text_top.
     ImageDraw.Draw(layer).text(
-        (-bbox[0], y_baseline_offset - bbox[1]), text, fill=WHITE, font=font
+        (-bbox[0], y_text_top - bbox[1]), text, fill=WHITE, font=font
     )
 
     arr = np.array(layer)
@@ -58,20 +74,35 @@ def build_main_layer(font, text, bbox, y_baseline_offset, target_h, shear=0.0):
     outline_px = max(4, font.size // 32)
     interior = binary_erosion(shape_mask, iterations=outline_px)
 
-    split_y = y_baseline_offset + text_h // 2
+    split_y = y_text_top + text_h // 2
+    text_bottom = y_text_top + text_h
+
     ys = np.arange(target_h)[:, None].repeat(buf_w, axis=1)
+
     upper_interior = interior & (ys < split_y)
     arr[upper_interior] = [0, 0, 0, 0]
+
+    lower_interior = interior & (ys >= split_y)
+    if lower_interior.any():
+        gradient_h = max(text_bottom - split_y, 1)
+        t = np.clip((ys - split_y) / gradient_h, 0.0, 1.0)
+        r_channel = (1 - t) * WHITE[0] + t * LIGHT_BLUE[0]
+        g_channel = (1 - t) * WHITE[1] + t * LIGHT_BLUE[1]
+        b_channel = (1 - t) * WHITE[2] + t * LIGHT_BLUE[2]
+        arr[..., 0][lower_interior] = r_channel[lower_interior].astype(np.uint8)
+        arr[..., 1][lower_interior] = g_channel[lower_interior].astype(np.uint8)
+        arr[..., 2][lower_interior] = b_channel[lower_interior].astype(np.uint8)
+
     layer = Image.fromarray(arr)
 
     if shear:
         # AFFINE: OUTPUT(X,Y) -> INPUT(x = X + shear*Y - shear*H, y = Y).
         # Top of text (small Y) samples from small x -> top shifts right.
-        a, b, c = 1, shear, -shear * target_h
+        a, b_aff, c = 1, shear, -shear * target_h
         layer = layer.transform(
             (buf_w, target_h),
             Image.AFFINE,
-            (a, b, c, 0, 1, 0),
+            (a, b_aff, c, 0, 1, 0),
             resample=Image.BICUBIC,
         )
     return layer, outline_px
@@ -81,7 +112,7 @@ def render(out_path, shear=0.0, transparent=False):
     if transparent:
         canvas = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     else:
-        canvas = Image.new("RGB", (W, H), NAVY)
+        canvas = Image.new("RGB", (W, H), ROYAL)
 
     top_text = "MOORABBIN"
     top_size = fit(top_text, int(W * 0.70), int(H * 0.18), FONT_TOP)
@@ -89,10 +120,8 @@ def render(out_path, shear=0.0, transparent=False):
     b_top = top_font.getbbox(top_text)
     top_w, top_h = b_top[2] - b_top[0], b_top[3] - b_top[1]
 
-    main_text = "KANGAROOS"
+    main_text = "KANGAS"
     main_h_max = int(H * 0.62)
-    # Shear pushes the top of the text right by shear * main_h, so the
-    # effective horizontal footprint is main_w + shear*main_h. Reserve that.
     shear_budget = abs(shear) * main_h_max
     main_size = fit(
         main_text, W - 2 * PAD - int(shear_budget), main_h_max, FONT_MAIN
@@ -110,9 +139,9 @@ def render(out_path, shear=0.0, transparent=False):
         (top_x, block_y - b_top[1]), top_text, fill=WHITE, font=top_font
     )
 
-    main_y_baseline = block_y + top_h + gap
+    main_y_top = block_y + top_h + gap
     main_layer, outline_px = build_main_layer(
-        main_font, main_text, b_main, main_y_baseline, H, shear=shear
+        main_font, main_text, b_main, main_y_top, H, shear=shear
     )
 
     # Centre the (possibly slanted) layer horizontally.
@@ -128,6 +157,6 @@ def render(out_path, shear=0.0, transparent=False):
     )
 
 
-render("mkfc-cap-logo-split", shear=0.0)
-render("mkfc-cap-logo-split-italic", shear=0.22)  # ~12.4° lean
-render("mkfc-cap-logo-split-italic-transparent", shear=0.22, transparent=True)
+render("mkfc-wordmark-kangas", shear=0.0)
+render("mkfc-wordmark-kangas-italic", shear=0.22)  # ~12.4° lean
+render("mkfc-wordmark-kangas-italic-transparent", shear=0.22, transparent=True)

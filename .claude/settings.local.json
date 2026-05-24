@@ -97,7 +97,14 @@
       "PowerShell(Test-Path *)",
       "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\storage\\\\git\\\\mkfc.github.io\\\\mkfc-connect.pdf\"\\)[0..7]; $header = -join \\($bytes | ForEach-Object { [char]$_ }\\); Write-Output \"Header: $header\"; Get-Item C:\\\\storage\\\\git\\\\mkfc.github.io\\\\mkfc-connect.pdf | Select-Object Length, LastWriteTime)",
       "Bash(curl -sI -o /dev/null -w \"linkedin: %{http_code}\\\\n\" https://cdn.simpleicons.org/linkedin/013087)",
-      "Bash(curl -sI -o /dev/null -w \"facebook: %{http_code}\\\\n\" https://cdn.simpleicons.org/facebook/013087)"
+      "Bash(curl -sI -o /dev/null -w \"facebook: %{http_code}\\\\n\" https://cdn.simpleicons.org/facebook/013087)",
+      "PowerShell(python --version; python -c \"from PIL import Image, ImageDraw, ImageFont; from scipy.ndimage import binary_erosion; import numpy; print\\('deps ok'\\)\")",
+      "PowerShell(Get-ChildItem C:\\\\Windows\\\\Fonts | Where-Object { $_.Name -match \"cond|impact|narrow\" } | Select-Object Name -First 20)",
+      "PowerShell(python -m pip install --user pillow scipy numpy 2>&1 | Select-Object -Last 5)",
+      "PowerShell(py *)",
+      "PowerShell(wsl.exe --status 2>&1 | Select-Object -First 5; wsl.exe -- python3 --version 2>&1)",
+      "PowerShell(wsl.exe -- bash -c \"python3 -c 'from PIL import Image; from scipy.ndimage import binary_erosion; import numpy; print\\(\\\\\"deps ok\\\\\"\\)'\" 2>&1 | Select-Object -First 5)",
+      "PowerShell(New-Item *)"
     ]
   }
 }

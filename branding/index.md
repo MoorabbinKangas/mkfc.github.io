@@ -158,3 +158,5 @@ The brand applies consistently across on-field, training, off-field, and support
 ## Reference
 
 The club's brand language draws on the [North Melbourne Football Club](https://www.nmfc.com.au/) identity. For internal style notes see the [Welcome Pack](/welcome/).
+
+A logo redesign is in progress — see the [Logo redesign brief](/branding/redesign-brief/) for the working spec being supplied to designers (wordmark + square mark, merchandise + social avatar priorities).
