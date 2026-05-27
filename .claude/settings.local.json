@@ -108,7 +108,9 @@
       "Bash(echo \"EXIT:$?\")",
       "Bash(gem list *)",
       "Bash(ruby -v)",
-      "Bash(ruby *)"
+      "Bash(ruby *)",
+      "Bash(command -v ffprobe)",
+      "Bash(ffprobe -v error -show_entries stream=index,codec_type,codec_name,width,height -of default=noprint_wrappers=1 videos/MoorabbinKangas-club-song.mp4)"
     ]
   }
 }

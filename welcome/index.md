@@ -228,11 +228,11 @@ Today, the Moorabbin Kangaroos continue to be a vibrant part of the Hampton East
 ## Club Song
 
 <div class="club-song-player">
-  <h3>Listen to the Club Song</h3>
-  <audio controls preload="none">
-    <source src="/videos/song-trimmed.mp3" type="audio/mpeg">
-    Your browser does not support the audio player.
-  </audio>
+  <h3>Watch & Listen to the Club Song</h3>
+  <video controls preload="none">
+    <source src="/videos/MoorabbinKangas-club-song.mp4" type="video/mp4">
+    Your browser does not support the video player.
+  </video>
 </div>
 
 > Hearts to hearts and hands to hands,
