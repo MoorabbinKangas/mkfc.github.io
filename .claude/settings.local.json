@@ -104,7 +104,11 @@
       "PowerShell(py *)",
       "PowerShell(wsl.exe --status 2>&1 | Select-Object -First 5; wsl.exe -- python3 --version 2>&1)",
       "PowerShell(wsl.exe -- bash -c \"python3 -c 'from PIL import Image; from scipy.ndimage import binary_erosion; import numpy; print\\(\\\\\"deps ok\\\\\"\\)'\" 2>&1 | Select-Object -First 5)",
-      "PowerShell(New-Item *)"
+      "PowerShell(New-Item *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(gem list *)",
+      "Bash(ruby -v)",
+      "Bash(ruby *)"
     ]
   }
 }
