@@ -1,0 +1,98 @@
+# MKFC Shop / merchandise list
+# -----------------------------------------------------------------------------
+# This file drives the Shop page at /shop/ (shop/index.md).
+# Edit the products here — no need to touch the page layout.
+#
+# Each item supports:
+#   name        (required) Product name.
+#   price       (required) Display string, e.g. "$25", "$25.00", "2 for $40",
+#                          or "TBC" while a price is being decided.
+#   description (optional) One short line shown under the name.
+#   image       (optional) Path to a product photo, e.g. /assets/merchandise/scarf.jpg
+#                          Leave blank to show a branded "photo coming soon" placeholder.
+#   url         (optional) Payment / order link. When set to a real URL, the page
+#                          shows a scannable QR code + the link:
+#                            - Club items  -> paste the item's SQUARE checkout link.
+#                              Get it in the Square Dashboard: Online -> Checkout
+#                              links (the "square.link/..." or "checkout.square.site/..."
+#                              URL). The card then shows "Scan to buy - secure
+#                              payment by Square", and the QR is scan-to-pay.
+#                            - Partner items -> paste the vendor's store URL AND set
+#                              `vendor` below. The card shows "Order from {vendor}".
+#                          Leave as "#" (or blank) until the link exists — the QR is
+#                          then hidden (club items show nothing; partner items show
+#                          "Online link coming soon").
+#   vendor      (optional) Third-party vendor name. Set this ONLY for partner-sold
+#                          items. Leave blank for items the club sells via Square.
+#   fulfilment  (optional) How the buyer gets the item:
+#                            pickup -> shows "Collect at the club"
+#                            post   -> shows "Posted to you"
+#                            (or any custom text, shown as-is). Omit to hide the line.
+#
+# TO TURN ON "SCAN TO BUY" FOR A CLUB ITEM: create a checkout link for it in your
+# Square Dashboard, then paste that link into the item's `url:` (replacing "#").
+#
+# Group items into "categories" — each renders as its own section on the page.
+# -----------------------------------------------------------------------------
+
+currency: AUD
+updated: 2026-05-27
+note: "All prices in AUD and include GST. Online payments are processed securely by Square. Availability subject to stock. Prices marked TBC are being finalised by the committee."
+
+categories:
+  - name: "Club Merchandise"
+    blurb: "Buy at the merchandise table on game day (cash or card), or scan an item's code to pay online securely with Square."
+    items:
+      - name: "Club Cap"
+        price: "TBC"
+        description: "Royal blue 6-panel cap with embroidered MOORABBIN / KANGAS split-script wordmark."
+        image: "/assets/merchandise/cap-artwork/mkfc-cap-wordmark.png"
+        url: "#"   # paste this cap's Square checkout link to switch on "Scan to buy"
+        fulfilment: pickup
+
+      - name: "Supporter Scarf"
+        price: "TBC"
+        description: "Knitted royal blue & white club scarf — match-day essential."
+        image: ""
+        url: "#"   # paste this item's Square checkout link
+        fulfilment: pickup
+
+      - name: "Beanie"
+        price: "TBC"
+        description: "Warm royal blue beanie with embroidered club mark."
+        image: ""
+        url: "#"   # paste this item's Square checkout link
+        fulfilment: pickup
+
+      - name: "Polo Shirt"
+        price: "TBC"
+        description: "Club polo in royal blue, sizes S–3XL."
+        image: ""
+        url: "#"   # paste this item's Square checkout link
+        fulfilment: pickup
+
+      - name: "Hoodie"
+        price: "TBC"
+        description: "Fleece-lined club hoodie, royal blue."
+        image: ""
+        url: "#"   # paste this item's Square checkout link
+        fulfilment: pickup
+
+      - name: "Stubby Holder"
+        price: "TBC"
+        description: "Neoprene can cooler with the club mark."
+        image: ""
+        url: "#"   # paste this item's Square checkout link
+        fulfilment: pickup
+
+  - name: "Order Online from our Partners"
+    blurb: "Some gear is supplied by our merchandise partners. Scan the code to order from their store."
+    items:
+      # --- Example partner item ------------------------------------------------
+      # Replace url "#" with the partner's real store link to switch on the QR code.
+      - name: "Custom Teamwear"
+        price: "See store"
+        description: "Training tops, jackets and on-field apparel from our teamwear partner."
+        image: ""
+        vendor: "Teamwear Partner"
+        url: "#"
