@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10cm" height="5cm" viewBox="0 0 1000 500" role="img">
+<title>Moorabbin Kangas wordmark, black on transparent for merchandise, 10cm by 5cm</title>
+<desc>Transparent background, 2:1 proportion, with MOORABBIN enlarged 25 percent in bold black over black outlined italic KANGAS, both lines the same width.</desc>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,700;1,900&amp;display=swap');
+.m{font-family:'Archivo','Arial',sans-serif;font-weight:700;fill:#000000;}
+.k{font-family:'Archivo','Arial Black',sans-serif;font-weight:900;font-style:italic;fill:none;stroke:#000000;stroke-width:7;stroke-linejoin:round;}
+</style>
+<rect x="40" y="40" width="920" height="420" rx="10" fill="none" stroke="#000000" stroke-width="3" opacity="0.85"/>
+<text class="m" x="500" y="189" text-anchor="middle" font-size="71.25" textLength="820" lengthAdjust="spacing" transform="matrix(1 0 0 1.2 0 -33.7)">MOORABBIN</text>
+<text class="k" x="500" y="352" text-anchor="middle" font-size="171" textLength="820" lengthAdjust="spacing" vector-effect="non-scaling-stroke" transform="matrix(1 0 0 1.2 0 -58.1)">KANGAS</text>
+</svg>
