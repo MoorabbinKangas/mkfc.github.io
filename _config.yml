@@ -63,6 +63,7 @@ header_pages:
   - shop/index.md
   - calendar/index.md
   - register/index.md
+  - volunteers/index.md
   - contact/index.md
 
 show_excerpts: true

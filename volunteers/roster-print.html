@@ -1,0 +1,180 @@
+---
+layout: null
+permalink: /volunteers/roster-print.html
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MKFC Game Day Volunteer Roster — Print</title>
+<style>
+  :root {
+    --blue: #013087;
+    --mid: #1F4DA8;
+    --light: #C8D6F0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #111;
+    margin: 0;
+    padding: 14mm;
+    background: #fff;
+  }
+  header {
+    border-bottom: 4px solid var(--blue);
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  header img { height: 60px; width: 60px; border-radius: 50%; }
+  h1 {
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 24px;
+    margin: 0;
+  }
+  .sub { color: var(--mid); font-size: 13px; margin-top: 2px; }
+  .meta {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+  .meta b { color: var(--blue); }
+  .fill { display: inline-block; min-width: 120px; border-bottom: 1px solid #888; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+    font-size: 13px;
+  }
+  th {
+    background: var(--mid);
+    color: #fff;
+    text-align: left;
+    padding: 7px 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 12px;
+  }
+  td {
+    padding: 9px;
+    border: 1px solid #cfd8ea;
+    vertical-align: middle;
+  }
+  td.role { font-weight: 700; color: var(--blue); width: 32%; }
+  td.time { width: 14%; white-space: nowrap; color: #444; font-size: 12px; }
+  td.name { width: 40%; }
+  .name-line { border-bottom: 1px solid #999; height: 18px; }
+  .name-line + .name-line { margin-top: 7px; }
+  tr:nth-child(even) td { background: #f0f4fa; }
+  .note {
+    font-size: 12px;
+    color: #555;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+  }
+  .note b { color: var(--blue); }
+  .print-hint {
+    background: var(--light);
+    color: var(--blue);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  @media print {
+    body { padding: 0; }
+    .print-hint { display: none; }
+    @page { size: A4; margin: 12mm; }
+  }
+</style>
+</head>
+<body>
+  <div class="print-hint">Tip: press <b>Ctrl/Cmd&nbsp;+&nbsp;P</b> to print this sheet on A4 for the clubrooms noticeboard.</div>
+
+  <header>
+    <img src="/favicon.png" alt="MKFC logo">
+    <div>
+      <h1>Game Day Volunteer Roster</h1>
+      <div class="sub">Moorabbin Kangaroos Football Club &middot; Widdop Crescent Oval</div>
+    </div>
+  </header>
+
+  <div class="meta">
+    <div><b>Round:</b> <span class="fill"></span></div>
+    <div><b>Date:</b> <span class="fill"></span></div>
+    <div><b>Opponent:</b> <span class="fill"></span></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Role</th>
+        <th>Time</th>
+        <th>Volunteer name &amp; phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="role">Team Manager — Reserves</td>
+        <td class="time">From 11:00</td>
+        <td class="name"><div class="name-line"></div></td>
+      </tr>
+      <tr>
+        <td class="role">Team Manager — Seniors</td>
+        <td class="time">From 1:00</td>
+        <td class="name"><div class="name-line"></div></td>
+      </tr>
+      <tr>
+        <td class="role">Umpire Escort — Reserves</td>
+        <td class="time">11:40</td>
+        <td class="name"><div class="name-line"></div></td>
+      </tr>
+      <tr>
+        <td class="role">Umpire Escort — Seniors</td>
+        <td class="time">1:40</td>
+        <td class="name"><div class="name-line"></div></td>
+      </tr>
+      <tr>
+        <td class="role">Ground Setup — pads &amp; banners</td>
+        <td class="time">10:30</td>
+        <td class="name"><div class="name-line"></div><div class="name-line"></div></td>
+      </tr>
+      <tr>
+        <td class="role">Canteen — morning shift</td>
+        <td class="time">11:00</td>
+        <td class="name"><div class="name-line"></div><div class="name-line"></div></td>
+      </tr>
+      <tr>
+        <td class="role">Canteen — afternoon shift</td>
+        <td class="time">1:00</td>
+        <td class="name"><div class="name-line"></div><div class="name-line"></div></td>
+      </tr>
+      <tr>
+        <td class="role">Canteen Close &amp; cash</td>
+        <td class="time">Close</td>
+        <td class="name"><div class="name-line"></div></td>
+      </tr>
+      <tr>
+        <td class="role">Ground Pack-down</td>
+        <td class="time">After last game</td>
+        <td class="name"><div class="name-line"></div><div class="name-line"></div></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <b>Coordinator:</b> <span class="fill" style="min-width:180px;"></span>
+    &nbsp;&nbsp;<b>Phone:</b> <span class="fill" style="min-width:140px;"></span><br><br>
+    Home games: Reserves 12 PM, Seniors 2 PM. To sign up ahead of time, email
+    <b>info@mkfc.org.au</b> or message us on Facebook / Instagram. One shift a season keeps the load light — go Kangas!
+  </div>
+</body>
+</html>
