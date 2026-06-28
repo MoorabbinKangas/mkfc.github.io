@@ -110,7 +110,12 @@
       "Bash(ruby -v)",
       "Bash(ruby *)",
       "Bash(command -v ffprobe)",
-      "Bash(ffprobe -v error -show_entries stream=index,codec_type,codec_name,width,height -of default=noprint_wrappers=1 videos/MoorabbinKangas-club-song.mp4)"
+      "Bash(ffprobe -v error -show_entries stream=index,codec_type,codec_name,width,height -of default=noprint_wrappers=1 videos/MoorabbinKangas-club-song.mp4)",
+      "Bash(python -c \"import qrcode; print\\('qrcode ok'\\)\")",
+      "Bash(python -m pip install qrcode)",
+      "Bash(/c/Python310/python.exe -c \"import html.entities; print\\('py310 ok'\\)\")",
+      "Bash(/c/Storage/Miniconda3/python.exe -c \"import html.entities; print\\('conda ok'\\)\")",
+      "Bash(npm install *)"
     ]
   }
 }

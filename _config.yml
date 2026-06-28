@@ -57,6 +57,7 @@ header_pages:
   - index.md
   - about/index.md
   - news/index.md
+  - raffle/index.md
   - players/index.md
   - gallery/index.md
   - sponsors/index.md
