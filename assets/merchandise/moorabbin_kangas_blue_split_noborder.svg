@@ -1,0 +1,13 @@
+<svg width="100%" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" role="img" style="">
+<title style="fill:rgb(1, 48, 135);stroke:none;color:rgb(1, 48, 135);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Moorabbin Kangas blue split wordmark, no border, transparent background, wider</title>
+<desc style="fill:rgb(1, 48, 135);stroke:none;color:rgb(1, 48, 135);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Transparent background. MOORABBIN in bold MKFC royal blue over KANGAS in bold italic that is solid royal blue on the top half and royal blue outline on the bottom half, with no border and the text widened toward the edges.</desc>
+<defs>
+<clipPath id="kTopNB"><rect x="0" y="0" width="1000" height="290.5"/></clipPath>
+</defs>
+
+<text x="500" y="189" text-anchor="middle" font-size="71.25" textLength="920" lengthAdjust="spacing" transform="matrix(1 0 0 1.2 0 -33.7)" style="fill:rgb(1, 48, 135);stroke:none;color:rgb(1, 48, 135);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Archivo, Arial, sans-serif;font-size:71.25px;font-weight:700;text-anchor:middle;dominant-baseline:auto">MOORABBIN</text>
+<g transform="matrix(1 0 0 1.2 0 -58.1)" style="fill:rgb(1, 48, 135);stroke:none;color:rgb(1, 48, 135);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+<text x="500" y="352" text-anchor="middle" font-size="171" textLength="920" lengthAdjust="spacing" clip-path="url(#kTopNB)" style="fill:rgb(1, 48, 135);stroke:none;color:rgb(1, 48, 135);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Archivo, &quot;Arial Black&quot;, sans-serif;font-size:171px;font-weight:900;font-style:italic;text-anchor:middle;dominant-baseline:auto">KANGAS</text>
+<text x="500" y="352" text-anchor="middle" font-size="171" textLength="920" lengthAdjust="spacing" vector-effect="non-scaling-stroke" style="fill:none;stroke:rgb(1, 48, 135);color:rgb(1, 48, 135);stroke-width:7px;stroke-linecap:butt;stroke-linejoin:round;opacity:1;font-family:Archivo, &quot;Arial Black&quot;, sans-serif;font-size:171px;font-weight:900;font-style:italic;text-anchor:middle;dominant-baseline:auto">KANGAS</text>
+</g>
+</svg>

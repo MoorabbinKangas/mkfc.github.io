@@ -115,7 +115,13 @@
       "Bash(python -m pip install qrcode)",
       "Bash(/c/Python310/python.exe -c \"import html.entities; print\\('py310 ok'\\)\")",
       "Bash(/c/Storage/Miniconda3/python.exe -c \"import html.entities; print\\('conda ok'\\)\")",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(curl -sL \"https://github.com/google/fonts/raw/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf\" -o \"Archivo.ttf\")",
+      "Bash(rm -f Archivo-Bold.ttf Archivo-Black.ttf Archivo-BlackItalic.ttf Archivo-BoldItalic.ttf)",
+      "Bash(curl -sL \"https://github.com/google/fonts/raw/main/ofl/archivo/Archivo-Italic%5Bwdth%2Cwght%5D.ttf\" -o \"Archivo-Italic.ttf\")",
+      "Bash(mkdir -p ~/.fonts)",
+      "Bash(cp Archivo.ttf Archivo-Italic.ttf ~/.fonts/)",
+      "Bash(fc-cache -f ~/.fonts)"
     ]
   }
 }
