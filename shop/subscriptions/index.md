@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Subscriptions
-permalink: /subscriptions/
+permalink: /shop/subscriptions/
 description: "Moorabbin Kangaroos FC season subscriptions — player and social memberships for 2026. Pay securely online via Square or scan a QR code."
 ---
 

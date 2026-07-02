@@ -96,6 +96,72 @@ body {
   }
 }
 
+// Nav dropdown (e.g. Shop > Subscriptions)
+.site-nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 600px) {
+  .site-nav-dropdown {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    > .page-link {
+      margin-right: 0;
+
+      &::after {
+        content: " \25BE";
+        font-size: 0.7em;
+      }
+    }
+  }
+
+  .site-nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: $mkfc-blue;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 0.25rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+
+    .page-link {
+      display: block;
+      margin-right: 0 !important;
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+    }
+  }
+
+  .site-nav-dropdown:hover .site-nav-dropdown-menu,
+  .site-nav-dropdown:focus-within .site-nav-dropdown-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .site-nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .site-nav-dropdown-menu {
+    .page-link {
+      padding-left: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+  }
+}
+
 // ----------------------------------------
 // Headings
 // ----------------------------------------
