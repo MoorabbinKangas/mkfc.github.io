@@ -109,6 +109,14 @@ description: "Moorabbin Kangaroos FC merchandise — shorts, socks, polos and mo
 <div class="merch-grid">
 
 <div class="info-card merch-card">
+  <h3>Moorabbin Kangas Baseball Cap</h3>
+  <p class="merch-price">$20.00</p>
+  <p class="merch-desc">Club branded baseball cap.</p>
+  <div class="merch-qr" data-qr="https://square.link/u/trK2pHGH?src=webqr"></div>
+  <a href="https://square.link/u/trK2pHGH?src=webqr" class="merch-button">Buy Now</a>
+</div>
+
+<div class="info-card merch-card">
   <h3>Game Day Shorts - Away (White)</h3>
   <p class="merch-price">$40.00</p>
   <p class="merch-desc">Official away game day shorts, white.</p>
