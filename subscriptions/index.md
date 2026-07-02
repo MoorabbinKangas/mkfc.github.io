@@ -126,7 +126,7 @@ description: "Moorabbin Kangaroos FC season subscriptions — player and social 
 
 <div class="info-card sub-card">
   <h3>Season Player Subscription (Part-payment)</h3>
-  <p class="sub-price">$20.00</p>
+  <p class="sub-price">$30.00</p>
   <p class="sub-desc">Make a partial payment towards your season subscription. Use this link as many times as needed to pay off your total.</p>
   <div class="sub-qr" data-qr="https://square.link/u/yoSZcY2R?src=webqr"></div>
   <a href="https://square.link/u/yoSZcY2R?src=webqr" class="sub-button">Make a Payment</a>
@@ -134,7 +134,7 @@ description: "Moorabbin Kangaroos FC season subscriptions — player and social 
 
 <div class="info-card sub-card">
   <h3>Season Social Membership</h3>
-  <p class="sub-price">$50.00</p>
+  <p class="sub-price">$60.00</p>
   <p class="sub-desc">Non-playing social membership — support the club and enjoy member benefits.</p>
   <div class="sub-qr" data-qr="https://square.link/u/HzOHr3Mu?src=webqr"></div>
   <a href="https://square.link/u/HzOHr3Mu?src=webqr" class="sub-button">Subscribe Now</a>
