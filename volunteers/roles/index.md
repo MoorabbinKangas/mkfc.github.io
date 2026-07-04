@@ -16,6 +16,8 @@ Beyond game-day shifts, the club relies on a small group of volunteers who each 
 | Seniors Team Manager | TBC |
 | Reserves Team Manager | TBC |
 | Bar Manager | TBC |
+| Ground Manager | TBC |
+| Umpire Escort | TBC |
 | Social Media Manager | Kyle Abell |
 | Player Ambassador | Peter Cooney |
 | Canteen Manager | Lisa Griffiths |
