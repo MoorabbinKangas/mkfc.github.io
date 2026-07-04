@@ -135,7 +135,10 @@
       "Bash(mkdir -p \"C:/storage/git/mkfc.github.io/assets/news\")",
       "Bash(mv \"C:/storage/git/mkfc.github.io/_posts/coach-matt.jpeg\" \"C:/storage/git/mkfc.github.io/assets/news/coach-matt.jpeg\")",
       "Bash(gh workflow *)",
-      "Bash(gh run *)"
+      "Bash(gh run *)",
+      "Bash(gh api *)",
+      "Bash(nslookup www.mkfc.org.au)",
+      "Bash(curl -sI https://www.mkfc.org.au)"
     ]
   }
 }
