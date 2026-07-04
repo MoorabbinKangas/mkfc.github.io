@@ -1,57 +1,30 @@
 ---
 layout: default
 title: Volunteers
-description: "Game-day volunteer roles and sign-up for the Moorabbin Kangaroos Football Club — Team Manager, umpire escort, ground setup, and canteen."
+permalink: /volunteers/
+description: "Volunteering at the Moorabbin Kangaroos Football Club — why it matters, and how to get involved on game day or behind the scenes."
 ---
 
-# Game Day Volunteers
+# Volunteers
 
-Our club runs on volunteers. Every home game needs a handful of helpers to set up the ground, look after the umpires, support the teams, and keep the canteen humming. Pitch in for **one shift a season** and the load stays light for everyone.
+Community football clubs like the Moorabbin Kangaroos are built and run by volunteers. There's no head office, no paid administration — just members giving up their time so the club can field teams, open the canteen, and keep the lights on.
 
-**[Sign up for a shift](#sign-up)** — or chat to the Volunteer Coordinator at the ground.
+## Why Volunteers Matter
 
-## Roles
+Local sporting clubs sit at the heart of their community, and they only exist because people choose to show up for more than themselves. A club like ours depends on volunteers for almost everything: running the ground on game day, managing the bar and canteen, chasing sponsorship, applying for grants, and promoting the club online. Without that unpaid effort, there is no footy.
 
-| Role | Helpers needed | Arrive | Finish | What's involved |
-|------|:--:|------|------|-----------------|
-| **Team Manager** | 1 per team | 60 min before bounce | Post-game | Player check-in, jumpers & runners, liaise with coach and umpires, complete the team sheet |
-| **Umpire Escort** | 1–2 | 20 min before each game | End of each game | Walk the umpires to and from the rooms, look after their safety, deliver drinks at breaks |
-| **Ground Setup** | 2–3 | 90 min before first game | — | Fit the goal post pads, hang sponsor banners on the fence, flag the boundary |
-| **Ground Pack-down** | 2–3 | After last game | ~45 min after | Remove pads & banners, store the gear, clear rubbish |
-| **Canteen** | 3–4 (in shifts) | 60 min before first game | 30 min after last | Cooking, serving, register, restocking |
-| **Canteen Close** | 1 | Mid-day | Close | Cash reconciliation, clean-down, lock-up |
+Volunteering also builds the club beyond the scoreboard. It's how new members meet people, how younger volunteers pick up real skills in event running, marketing, or finance, and how the club stays connected to the local area it represents. Every hour given keeps membership fees lower and keeps the club welcoming to anyone who wants to play, whatever their background.
 
-## A Typical Home Game
+Research on community sport consistently backs this up — clubs with strong, well-supported volunteer bases are more sustainable, more inclusive, and better able to weather lean years. The flip side is real too: volunteer burnout and thin committees are among the biggest risks facing grassroots clubs. Spreading the load across more people, not relying on the same few, is what keeps a club like MKFC healthy for the long run.
 
-Home games are at Widdop Crescent Oval — **Reserves at 12 PM**, **Seniors at 2 PM**. A full day looks like this:
+## Ways to Get Involved
 
-| Time | Who's on |
-|------|----------|
-| 10:30 am | Ground Setup crew — pads, banners, boundary flags |
-| 11:00 am | Canteen opens (morning shift) |
-| 11:00 am | Reserves Team Manager arrives |
-| 11:40 am | Umpire escort (Reserves) |
-| 1:00 pm | Seniors Team Manager arrives; canteen afternoon shift starts |
-| 1:40 pm | Umpire escort (Seniors) |
-| ~4:30 pm | Pack-down crew + canteen close |
+There are two broad ways to pitch in at Moorabbin Kangaroos:
 
-## How We Keep It Fair
+- **[Game Day Volunteers](/volunteers/game-day/)** — one-off shifts on the day: Team Manager, umpire escort, ground setup, canteen. Perfect if you can spare a few hours a season.
+- **[Volunteer Roles](/volunteers/roles/)** — ongoing, named roles that run the club year-round, from Bar Manager to Sponsors Co-ordinator. Several of these are currently open.
 
-- **One shift a season** is all we ask — many hands make light work.
-- **Roles rotate** so it's never the same five people every week.
-- **Two-deep on key roles** (Team Manager, canteen lead) so there's always a backup.
-- The **Volunteer Coordinator** owns the roster and sends a reminder mid-week.
+If you're not sure where you'd fit, get in touch and we'll find you a spot — every bit helps the Kangas.
 
-## Sign Up {#sign-up}
-
-Ready to help? Pick a game and a role:
-
-- **Email** the club at [info@mkfc.org.au](mailto:info@mkfc.org.au?subject=Game%20Day%20Volunteer) with the round and role you'd like.
-- **Message us** on [Facebook](https://www.facebook.com/MoorabbinKangas) or [Instagram](https://www.instagram.com/moorabbinkangas).
-- **See the fixture** on the [Calendar](/calendar/) to pick a home game.
-
-Not sure where you'd fit? Just say so — we'll find a spot. Every bit helps the Kangas.
-
----
-
-**Running the roster on the day?** [Print the blank sign-up sheet](/volunteers/roster-print.html) for the clubrooms noticeboard.
+- **Email** the club at [info@mkfc.org.au](mailto:info@mkfc.org.au?subject=Volunteering%20at%20MKFC)
+- **Message us** on [Facebook](https://www.facebook.com/MoorabbinKangas) or [Instagram](https://www.instagram.com/moorabbinkangas)

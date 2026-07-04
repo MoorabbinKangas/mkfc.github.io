@@ -37,7 +37,7 @@
                   </div>
                 </div>
               {%- elsif my_page.url == "/volunteers/" -%}
-                {%- assign volunteers_child_paths = "volunteers/register/index.md,volunteers/roster/index.md" | split: "," -%}
+                {%- assign volunteers_child_paths = "volunteers/game-day/index.md,volunteers/roles/index.md,volunteers/register/index.md,volunteers/roster/index.md" | split: "," -%}
                 <div class="site-nav-dropdown">
                   <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                   <div class="site-nav-dropdown-menu">

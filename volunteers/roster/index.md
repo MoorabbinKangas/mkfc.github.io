@@ -11,4 +11,4 @@ See who's rostered on for upcoming home games — Team Manager, umpire escort, g
 
 ## Coming Soon
 
-We're putting the roster together. Check back soon, or see the [Volunteers page](/volunteers/) to sign up for a shift.
+We're putting the roster together. Check back soon, or see the [Game Day Volunteers page](/volunteers/game-day/) to sign up for a shift.
