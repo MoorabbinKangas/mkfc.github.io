@@ -24,7 +24,7 @@
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
               {%- if my_page.url == "/shop/" -%}
-                {%- assign shop_child_paths = "shop/merchandise/index.md,shop/subscriptions/index.md" | split: "," -%}
+                {%- assign shop_child_paths = "shop/merchandise/index.md,shop/subscriptions/index.md,shop/events/index.md" | split: "," -%}
                 <div class="site-nav-dropdown">
                   <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                   <div class="site-nav-dropdown-menu">
@@ -32,6 +32,19 @@
                       {%- assign shop_child = site.pages | where: "path", child_path | first -%}
                       {%- if shop_child -%}
                       <a class="page-link" href="{{ shop_child.url | relative_url }}">{{ shop_child.title | escape }}</a>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                </div>
+              {%- elsif my_page.url == "/volunteers/" -%}
+                {%- assign volunteers_child_paths = "volunteers/register/index.md,volunteers/roster/index.md" | split: "," -%}
+                <div class="site-nav-dropdown">
+                  <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                  <div class="site-nav-dropdown-menu">
+                    {%- for child_path in volunteers_child_paths -%}
+                      {%- assign volunteers_child = site.pages | where: "path", child_path | first -%}
+                      {%- if volunteers_child -%}
+                      <a class="page-link" href="{{ volunteers_child.url | relative_url }}">{{ volunteers_child.title | escape }}</a>
                       {%- endif -%}
                     {%- endfor -%}
                   </div>

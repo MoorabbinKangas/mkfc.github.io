@@ -3,7 +3,10 @@ layout: post
 title: "Matt Ferguson Recommits as Senior Coach Through 2028"
 date: 2026-07-01
 description: "Moorabbin Kangaroos FC is thrilled to announce that senior coach Matt Ferguson has committed to two more seasons, guiding the Roos through 2027 and 2028."
+image: /assets/news/coach-matt.jpeg
 ---
+
+![Matt Ferguson, Moorabbin Kangaroos Senior Coach](/assets/news/coach-matt.jpeg)
 
 The Moorabbin Kangaroos Football Club is delighted to announce that **Matt Ferguson has recommitted as Senior Coach for a further two seasons**, taking his tenure through the 2027 and 2028 campaigns.
 

@@ -131,7 +131,9 @@
       "Read(//c/Users/peter/AppData/Local/Temp/claude/C--storage-git-mkfc-github-io/c1f75cb6-f604-460a-a243-c74a2a30abbe/scratchpad/**)",
       "Bash(node decode.js \"C:/storage/git/mkfc.github.io/assets/merchandise/Season Player Subscription \\(Full\\).png\" \"C:/storage/git/mkfc.github.io/assets/merchandise/Season Player Subscription \\(Concession\\).png\" \"C:/storage/git/mkfc.github.io/assets/merchandise/Season Player Subscription \\(Part-payment\\).png\" \"C:/storage/git/mkfc.github.io/assets/merchandise/Season Social Membership.png\")",
       "Bash(jekyll -v)",
-      "Bash(git mv *)"
+      "Bash(git mv *)",
+      "Bash(mkdir -p \"C:/storage/git/mkfc.github.io/assets/news\")",
+      "Bash(mv \"C:/storage/git/mkfc.github.io/_posts/coach-matt.jpeg\" \"C:/storage/git/mkfc.github.io/assets/news/coach-matt.jpeg\")"
     ]
   }
 }
