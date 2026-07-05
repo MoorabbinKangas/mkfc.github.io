@@ -30,6 +30,8 @@ body {
   background-color: $mkfc-blue;
   border-top: 4px solid $mkfc-light-blue;
   border-bottom: none;
+  position: relative;
+  z-index: 100;
 }
 
 .page-content {
