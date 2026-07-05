@@ -138,7 +138,12 @@
       "Bash(gh run *)",
       "Bash(gh api *)",
       "Bash(nslookup www.mkfc.org.au)",
-      "Bash(curl -sI https://www.mkfc.org.au)"
+      "Bash(curl -sI https://www.mkfc.org.au)",
+      "Bash(python -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "Bash(where magick *)",
+      "Bash(where ffmpeg *)",
+      "PowerShell(Out-Null *)",
+      "PowerShell(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\peter\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--storage-git-mkfc-github-io\\\\99f2bd96-1f89-413c-898f-249e072f2b80\\\\scratchpad\\\\resize-photos.ps1\")"
     ]
   }
 }
