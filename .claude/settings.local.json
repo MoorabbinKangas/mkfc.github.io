@@ -150,7 +150,19 @@
       "Bash(where node *)",
       "Bash(npx --yes sass --version)",
       "Bash(npx --yes sass --load-path=\"C:/Users/peter/.gem/ruby/3.3.0/gems/minima-2.5.1/_sass\" C:/storage/git/mkfc.github.io/assets/main.scss /tmp_out.css)",
-      "Bash(npx --yes sass@1.77.8 --load-path=\"C:/Users/peter/.gem/ruby/3.3.0/gems/minima-2.5.1/_sass\" /tmp/main_nofm.scss /tmp/tmp_out.css)"
+      "Bash(npx --yes sass@1.77.8 --load-path=\"C:/Users/peter/.gem/ruby/3.3.0/gems/minima-2.5.1/_sass\" /tmp/main_nofm.scss /tmp/tmp_out.css)",
+      "Bash(where chrome.exe)",
+      "Bash(where msedge.exe)",
+      "Bash(npm -v)",
+      "Bash(curl *)",
+      "Bash(mkdir -p \"C:/Users/peter/AppData/Local/Temp/claude/C--storage-git-mkfc-github-io/a8a3f4ef-59ce-4fd1-b1d4-f9b0e3af2736/scratchpad/print\")",
+      "Bash(npm init *)",
+      "Bash(node print.js)",
+      "Bash(python -c ' *)",
+      "Bash(node build-flyer.js)",
+      "Bash(node -e ' *)",
+      "Bash(python3 -c ' *)",
+      "Bash(tasklist *)"
     ]
   }
 }
