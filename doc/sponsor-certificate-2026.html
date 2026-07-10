@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MKFC Certificate of Appreciation — 2026 Sponsors</title>
+<style>
+  :root {
+    --mkfc-blue: #013087;
+    --mkfc-mid-blue: #1F4DA8;
+    --mkfc-light-blue: #C8D6F0;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #888;
+  }
+
+  /* ---------------------------------------------
+     Screen-only helper bar — does not print
+  --------------------------------------------- */
+  .toolbar {
+    max-width: 297mm;
+    margin: 0 auto;
+    padding: 12px 16px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .toolbar strong { color: var(--mkfc-light-blue); }
+
+  .toolbar button {
+    margin-top: 8px;
+    background: var(--mkfc-blue);
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .toolbar button:hover { background: var(--mkfc-mid-blue); }
+
+  /* ---------------------------------------------
+     Page / certificate
+  --------------------------------------------- */
+  .page {
+    width: 297mm;
+    height: 210mm;
+    margin: 16px auto;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .border-outer {
+    position: absolute;
+    inset: 8mm;
+    border: 2.5mm solid var(--mkfc-blue);
+  }
+
+  .border-inner {
+    position: absolute;
+    inset: 11.5mm;
+    border: 0.6mm solid var(--mkfc-light-blue);
+  }
+
+  .content {
+    position: absolute;
+    inset: 16mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140mm;
+    transform: translate(-50%, -50%);
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .logo {
+    height: 26mm;
+    margin-top: 2mm;
+    z-index: 1;
+  }
+
+  .club-name {
+    margin-top: 3mm;
+    font-family: "DIN Condensed", "Helvetica Neue Condensed", "Arial Narrow", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--mkfc-blue);
+    font-size: 13pt;
+    z-index: 1;
+  }
+
+  .title {
+    margin-top: 6mm;
+    font-family: "DIN Condensed", "Helvetica Neue Condensed", "Arial Narrow", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--mkfc-blue);
+    font-size: 34pt;
+    line-height: 1;
+    z-index: 1;
+  }
+
+  .subtitle {
+    margin-top: 3mm;
+    font-size: 13pt;
+    font-style: italic;
+    color: #444;
+    z-index: 1;
+  }
+
+  .recipient {
+    margin-top: 8mm;
+    min-width: 160mm;
+    padding-bottom: 2mm;
+    border-bottom: 0.5mm solid var(--mkfc-blue);
+    font-family: "DIN Condensed", "Helvetica Neue Condensed", "Arial Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 26pt;
+    color: var(--mkfc-mid-blue);
+    z-index: 1;
+  }
+
+  .recipient[contenteditable]:empty::before {
+    content: attr(data-placeholder);
+    color: #aab7d6;
+  }
+
+  .body-text {
+    margin-top: 8mm;
+    max-width: 190mm;
+    font-size: 13pt;
+    line-height: 1.5;
+    color: #222;
+    z-index: 1;
+  }
+
+  .body-text .fill {
+    font-weight: 700;
+    color: var(--mkfc-blue);
+  }
+
+  .signatures {
+    margin-top: auto;
+    padding-top: 10mm;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .sig-block {
+    width: 70mm;
+    text-align: center;
+  }
+
+  .sig-line {
+    border-bottom: 0.4mm solid #333;
+    height: 12mm;
+  }
+
+  .sig-label {
+    margin-top: 2mm;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555;
+  }
+
+  .footer-note {
+    margin-top: 6mm;
+    font-size: 9pt;
+    color: #777;
+    z-index: 1;
+  }
+
+  [contenteditable] {
+    outline: none;
+  }
+
+  [contenteditable]:hover,
+  [contenteditable]:focus {
+    background: rgba(200, 214, 240, 0.35);
+  }
+
+  /* ---------------------------------------------
+     Print rules
+  --------------------------------------------- */
+  @media print {
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+
+    body { background: #fff; }
+
+    .toolbar { display: none; }
+
+    .page {
+      margin: 0;
+      width: 297mm;
+      height: 210mm;
+    }
+
+    [contenteditable]:hover,
+    [contenteditable]:focus {
+      background: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="toolbar">
+    Editable template — for each sponsor: click the sponsor name and tier line below and type over the placeholder text,
+    then use your browser's <strong>Print</strong> command and choose <strong>A4</strong>, <strong>Landscape</strong>,
+    <strong>margins: None</strong>, background graphics <strong>on</strong>. Save one printed/laminated copy per sponsor.
+    <br>
+    <button onclick="window.print()">Print this certificate</button>
+  </div>
+
+  <div class="page">
+    <div class="border-outer"></div>
+    <div class="border-inner"></div>
+
+    <img class="watermark" src="../mkfc-logo-large-no-text.png" alt="">
+
+    <div class="content">
+      <img class="logo" src="../mkfc-logo-large-no-text.png" alt="Moorabbin Kangaroos Football Club logo">
+      <div class="club-name">Moorabbin Kangaroos Football Club</div>
+
+      <div class="title">Certificate of Appreciation</div>
+      <div class="subtitle">proudly presented to</div>
+
+      <div class="recipient" contenteditable="true" data-placeholder="[Sponsor Name]">[Sponsor Name]</div>
+
+      <div class="body-text">
+        In recognition and sincere appreciation of your generous support as a
+        <span class="fill" contenteditable="true" data-placeholder="[sponsorship tier]">[sponsorship tier]</span>
+        sponsor of the Moorabbin Kangaroos Football Club for the
+        <span class="fill" contenteditable="true" data-placeholder="2026">2026</span>
+        season. Your contribution helps our players, coaches and volunteers thrive both on and off the field,
+        and is valued by our entire club community.
+      </div>
+
+      <div class="signatures">
+        <div class="sig-block">
+          <div class="sig-line"></div>
+          <div class="sig-label">Club President</div>
+        </div>
+        <div class="sig-block">
+          <div class="sig-line"></div>
+          <div class="sig-label">Date</div>
+        </div>
+      </div>
+
+      <div class="footer-note">Southern Football and Netball League &nbsp;·&nbsp; www.mkfc.org.au</div>
+    </div>
+  </div>
+
+</body>
+</html>
