@@ -162,7 +162,13 @@
       "Bash(node build-flyer.js)",
       "Bash(node -e ' *)",
       "Bash(python3 -c ' *)",
-      "Bash(tasklist *)"
+      "Bash(tasklist *)",
+      "Read(//c/storage/git/**)",
+      "Read(//c/storage/**)",
+      "Bash(gh --version)",
+      "Bash(where python *)",
+      "Bash(where py *)",
+      "Bash(/c/Python311/python.exe *)"
     ]
   }
 }
