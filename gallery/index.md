@@ -31,3 +31,5 @@ Match-day and club event photos from the Moorabbin Kangaroos. Select an album be
 {% endif %}
 
 More photos on [Facebook](https://www.facebook.com/MoorabbinKangas) and [Instagram](https://www.instagram.com/moorabbinkangas).
+
+<p class="gallery-feed-link"><a href="{{ '/gallery/feed.xml' | relative_url }}">RSS feed of new albums</a> — for use with social media scheduling tools.</p>

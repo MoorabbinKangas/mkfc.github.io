@@ -126,6 +126,10 @@
 </script>
 {%- endif -%}
 
+{%- if page.url == "/gallery/" or page.layout == "gallery-album" -%}
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} - Gallery" href="{{ "/gallery/feed.xml" | absolute_url }}">
+{%- endif -%}
+
 {%- if page.url == "/calendar/" and site.data.fixtures.games -%}
 {%- for game in site.data.fixtures.games -%}
 <script type="application/ld+json">

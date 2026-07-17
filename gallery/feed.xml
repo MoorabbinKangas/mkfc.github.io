@@ -1,0 +1,35 @@
+---
+layout: none
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+  <title>{{ site.title }} - Gallery</title>
+  <link>{{ "/gallery/" | absolute_url }}</link>
+  <atom:link href="{{ "/gallery/feed.xml" | absolute_url }}" rel="self" type="application/rss+xml" />
+  <description>New photo albums from {{ site.title }} - match-day and club event photos.</description>
+  <language>{{ site.locale | default: "en-AU" }}</language>
+  {%- assign cdn_base = "https://cdn.jsdelivr.net/gh/MoorabbinKangas/media@main/gallery/" -%}
+  {%- for album in site.data.gallery.albums -%}
+  {%- assign slug = album.slug -%}
+  {%- if slug.size == 7 -%}
+    {%- assign item_date = slug | append: "-01" -%}
+  {%- else -%}
+    {%- assign item_date = slug -%}
+  {%- endif -%}
+  {%- assign cover = cdn_base | append: album.slug | append: "/" | append: album.photos.first -%}
+  {%- assign album_url = "/gallery/" | append: album.slug | append: "/" | absolute_url -%}
+  <item>
+    <title>New photos: {{ album.name }}</title>
+    <link>{{ album_url }}</link>
+    <guid isPermaLink="true">{{ album_url }}</guid>
+    <pubDate>{{ item_date | date_to_rfc822 }}</pubDate>
+    <description><![CDATA[{{ album.photos.size }} new photos from {{ album.name }}. <img src="{{ cover }}" alt="{{ album.name }}"><br>{{ album.name }} — {{ album.photos.size }} photos. View the full album at {{ album_url }}]]></description>
+    <enclosure url="{{ cover }}" type="image/jpeg" length="0" />
+    <media:content url="{{ cover }}" medium="image" />
+    <media:title>{{ album.name }}</media:title>
+  </item>
+  {%- endfor %}
+</channel>
+</rss>

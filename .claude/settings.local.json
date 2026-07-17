@@ -177,7 +177,8 @@
       "Bash(pip show *)",
       "Read(//c//**)",
       "Bash(python -c \"import sys; print\\(sys.path\\)\")",
-      "PowerShell(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\peter\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--storage-git-mkfc-github-io\\\\459c713b-26f1-4b77-812d-08aeb73d0a50\\\\scratchpad\\\\resize-gallery.ps1\")"
+      "PowerShell(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\peter\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--storage-git-mkfc-github-io\\\\459c713b-26f1-4b77-812d-08aeb73d0a50\\\\scratchpad\\\\resize-gallery.ps1\")",
+      "Bash(mkdir *)"
     ]
   }
 }

@@ -1,6 +1,6 @@
 albums:
   - name: "July 11 2026 Home Game"
-    slug: 2026-07-11
+    slug: "2026-07-11"
     photos:
       - DSC06722.jpg
       - DSC06727.jpg
