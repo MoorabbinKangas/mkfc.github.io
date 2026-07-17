@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% assign cdn_base = "https://cdn.jsdelivr.net/gh/MoorabbinKangas/media@main/gallery/" %}
+{% assign album = site.data.gallery.albums | where: "slug", page.album_slug | first %}
+
+<h1>{{ page.title }}</h1>
+
+<p class="gallery-album-back"><a href="{{ '/gallery/' | relative_url }}">&larr; Back to all albums</a></p>
+
+<div class="photo-gallery">
+  {% for photo in album.photos %}
+  <figure class="gallery-item">
+    <a href="{{ cdn_base }}{{ album.slug }}/{{ photo }}" target="_blank" rel="noopener">
+      <img src="{{ cdn_base }}{{ album.slug }}/{{ photo }}" alt="{{ album.name }} photo" loading="lazy">
+    </a>
+  </figure>
+  {% endfor %}
+</div>
+
+<p>More photos on <a href="https://www.facebook.com/MoorabbinKangas">Facebook</a> and <a href="https://www.instagram.com/moorabbinkangas">Instagram</a>.</p>

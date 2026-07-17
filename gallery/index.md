@@ -6,24 +6,21 @@ description: "Match-day and club event photos from the Moorabbin Kangaroos Footb
 
 # Photo Gallery
 
-Match-day and club event photos from the Moorabbin Kangaroos. Click any photo to view it full size.
+Match-day and club event photos from the Moorabbin Kangaroos. Select an album below to view the photos.
 
 {% assign cdn_base = "https://cdn.jsdelivr.net/gh/MoorabbinKangas/media@main/gallery/" %}
 
 {% if site.data.gallery.albums.size > 0 %}
-  {% for album in site.data.gallery.albums %}
-<h2>{{ album.name }}</h2>
-
 <div class="photo-gallery">
-  {% for photo in album.photos %}
+  {% for album in site.data.gallery.albums %}
   <figure class="gallery-item">
-    <a href="{{ cdn_base }}{{ album.slug }}/{{ photo }}" target="_blank" rel="noopener">
-      <img src="{{ cdn_base }}{{ album.slug }}/{{ photo }}" alt="{{ album.name }} photo" loading="lazy">
+    <a href="{{ '/gallery/' | append: album.slug | append: '/' | relative_url }}">
+      <img src="{{ cdn_base }}{{ album.slug }}/{{ album.photos.first }}" alt="{{ album.name }} cover photo" loading="lazy">
+      <figcaption>{{ album.name }} ({{ album.photos.size }} photos)</figcaption>
     </a>
   </figure>
   {% endfor %}
 </div>
-  {% endfor %}
 {% else %}
 <div class="photo-gallery">
   <p class="gallery-placeholder">Photos coming soon! Follow us on
