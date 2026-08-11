@@ -5,10 +5,10 @@ description: "Moorabbin Kangaroos Football Club — SFNL Division 4, Hampton Eas
 ---
 
 <div class="hero">
-  <video class="hero-bg-video hero-bg-video-desktop" autoplay muted loop playsinline preload="auto">
+  <video class="hero-bg-video hero-bg-video-desktop" autoplay muted loop playsinline preload="auto" poster="/assets/img/hero-poster-desktop.jpg">
     <source src="/videos/mkfc-clip2-2026-08-11.mp4" type="video/mp4">
   </video>
-  <video class="hero-bg-video hero-bg-video-mobile" autoplay muted loop playsinline preload="auto">
+  <video class="hero-bg-video hero-bg-video-mobile" autoplay muted loop playsinline preload="auto" poster="/assets/img/hero-poster-mobile.jpg">
     <source src="/videos/mkfc-clip-2026-08-11.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
